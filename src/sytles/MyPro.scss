@@ -1,0 +1,229 @@
+// @import url(reset.css);
+//  header.profile{background: transparent;
+//   .title_bar{
+//     .left_item{
+//       a{
+//         opacity: 1; 
+//         font-size: 20px;
+//       }
+//     }
+//   }
+//  }
+
+
+  main.profile{
+    height: calc(100% - 10px);
+    border: 1px solid green;
+    padding: 0;
+    
+    
+    .background{
+      border: 1px solid red;
+      height: 65%; 
+      background: url(../images/bg_default.png) no-repeat 0 0;
+      border: 1px solid red;
+
+      .mypro_icon.bg_img{
+        position: absolute;
+        color: #eeeeee;
+        top: 60%;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid ;
+        font-size: 12px;
+        text-align: center;
+        line-height: 24px;
+        // box-shadow: 1px 1px 10px #eee;
+        // background-color: #eeeeee;
+        // opacity: 100%;
+        svg{
+          
+          color: #eee;
+        }
+     
+
+
+      }
+   
+
+      .bg_box_edit{
+        display: flex;
+        position: absolute;
+        left: 16px;
+        top: 60%;
+        form{
+          input:last-of-type{
+            color: green;
+            border: none;
+            background: none;
+          
+          }
+        }
+        .canBtn{
+          color: red;
+          border: none;
+          background: none;
+        }
+
+      }
+
+
+      
+    }
+    .profile{
+      display: flex; 
+      justify-content: center; 
+      position: relative; 
+      width: 100%;
+      .profile_img{
+        position: absolute; 
+        left: 50%; 
+        top: -65px; 
+        width: 100px; 
+        height: 100px; 
+        margin-left: -50px;
+      }
+      .profile_img_edit{
+        display: flex;
+        flex-direction: column;
+        
+        .mypro_img_form{
+        position: absolute;
+        right: 30%;
+        top: 20px;
+          
+          input:last-of-type{
+            border: none;
+            color: green;
+            background: none;
+          span{
+
+          }
+            
+          }
+  
+        }
+  
+        .mypro.canBtn{
+          border: none; 
+          color: red;
+          cursor: pointer;
+          height: 16px;
+          background: none;
+          margin-top: 16px;
+          margin-left: 20px;
+        }
+
+      }
+      .mypro_icon.pro_img{
+        position: absolute;
+        top: 0;
+        margin-left: 80px;
+        
+        // color: #f2f2f2;
+      }
+ 
+        
+      // }
+      .mypro_icon.pro_img{
+        cursor: pointer;
+      }
+
+
+      .profile_cont{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 45px;
+        .profile_name{
+          font-size: 16px;
+          margin-left: 24px;
+          padding-top: 8px;
+          display: inline-block;
+        }
+        .mypro_icon{
+         
+          padding-left: 10px;
+          svg{
+            // color: #666;
+          }
+        }
+        input{
+          width: 148px; 
+          height: 24px; 
+          margin: 15px 0 20px; 
+          padding: 0 5px;
+        }
+        .profile_menu{
+          display: flex;
+          li{
+            margin: 0 6px;
+            a{
+              display: flex; 
+              flex-direction: column; 
+              align-items: center; 
+              font-weight: bold;
+              span{
+                display: block; 
+                width: 52px; 
+                height: 52px; 
+                border-radius: 50%; 
+                line-height: 52px; 
+                text-align: center; 
+                margin-bottom: 15px;
+                background-color: #f2f2f2; 
+                color: #513736; 
+                font-size: 20px;}
+            }
+          }
+        }
+
+        .mypro__pro{
+          display: flex; flex-direction: column; flex-wrap: wrap;
+          .pro_form{
+            padding: 0; margin: 0;
+            display: flex; flex-direction: column; 
+           input:first-of-type{
+            // border: none;
+            // border-bottom: 1px solid #555;
+            // width: 100px;
+            margin-bottom: 10px;
+           }
+            
+            input:last-of-type{
+              margin: 0;
+              margin-bottom: 10px;
+              align-self: center ;
+              color: green; 
+              border: none;
+              width: 80px;
+
+              background: none;
+              cursor: pointer;
+              
+
+            }
+          }
+          .mypro_canBtn{
+            align-self: center;
+            // margin-bottom: 3px;
+            // margin-right: 20px;
+            padding: 0;
+            color: red;
+            border: none;
+            background: none;
+            cursor: pointer;
+            
+
+            
+          }
+
+        }
+
+      }
+    
+    }
+  }
+// }

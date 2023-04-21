@@ -1,0 +1,38 @@
+@import url(Common.scss);
+.chat_header{
+  display: none;
+}
+.chats{
+  height: 85.8%; 
+  padding-top: 64px;
+  .main_section{
+    ul{
+      display: flex; 
+      flex-direction: column; 
+      
+      border-top: 1px solid #ebebeb;
+    }
+  }
+  .chat_fa_btn{
+    position: fixed; 
+    right: 20px; 
+    bottom: 80px;
+    a{
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      width: 60px; 
+      height: 60px; 
+      background: #ffe84c; 
+      border-radius: 50%;
+      box-shadow: 0 2px 6px #0004; 
+      font-size: 18px; 
+      color: #513736;
+      transition: color 300ms linear 0s, background 300ms linear 0s; 
+    &:hover{
+      background: #513736; 
+      color: #ffe84c;
+    }
+    }
+  }
+}

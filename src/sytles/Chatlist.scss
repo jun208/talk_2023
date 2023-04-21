@@ -1,0 +1,42 @@
+@import url(reset.css);
+.chats{
+  .main_section{
+    ul{
+      li{
+        border-bottom: 1px solid #ebebeb;
+        a{
+          display: flex; 
+          flex-wrap: wrap;
+          font-size: 16px; 
+          align-items: center;
+          .chats_img{
+            width: 50px; 
+            height: 50px; 
+            margin: 15px;
+          }
+          .chats_cont{
+            flex: auto; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            .chats_name{
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+            .chats_latest{
+              font-size: 12px; 
+              color: #8e9399;
+            }
+          
+            
+          }
+          .chats_time{
+            margin-right: 15px; 
+            font-size: 12px; 
+            color: #8e9399;
+          }          
+        }
+      }
+    }
+  }
+} 

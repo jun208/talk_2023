@@ -1,0 +1,88 @@
+@import url(reset.css);
+
+.auth{
+ display: flex; align-items: center; justify-content: center;  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background:rgb(255, 191, 205);
+
+ 
+  .kakaoLogo{
+    position: relative;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;  
+
+  }
+  // .kakaoLogo::after{
+  //     content:"TALK";
+  //     display: block;
+  //     width: 240px;
+  //     height: 160px;
+  //     background: #513736;
+  //     border-radius: 50%;
+  //     line-height: 160px;
+  //     text-align: center;
+  //     color: #ece820;
+     
+  // }
+  // .kakaoLogo::before{
+  //   position: absolute;
+  //   bottom: 0px;
+  //   content:"";
+  //   display: block;
+  //   width: 100px;
+  //   height: 100px;
+  //   background: #513736;
+  //   border-radius: 50%;
+  //   line-height: 160px;
+  //   text-align: center;
+  //   color: #ece820;
+  //  }
+  form{
+    input{
+      display: block; 
+      border: none; 
+      border-radius: 80px;
+      height: 40px; 
+      width: 280px;
+      opacity: 80%;
+    &:first-child{
+      // border-bottom: 1px solid #eee; 
+      margin-bottom: 8px;
+    }
+    &:last-child{
+      margin-top: 16px; 
+    }
+    &::placeholder{padding-left: 16px;}
+    }
+    .authError{
+      color: #f00;
+    
+    }
+  }
+  span{
+    padding: 8px;
+    margin-bottom: 40px;
+  }
+  .socialLog{
+    button{
+      display: block;
+      width: 280px;
+      height: 40px;
+      border: none;
+      background: #eee;
+      color: #513736;
+      margin-bottom: 16px;
+
+      
+        svg{
+          
+        }
+      
+      
+    }
+  }
+}
+
