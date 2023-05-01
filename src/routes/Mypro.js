@@ -279,22 +279,28 @@ const onBgSubmit = async (e) => {
         {bgEditing ? (
         <>
           <img className='bg_img' src={bgAttachment} alt='' width='100%' height='100%'></img>
+          {/* {bgAttachment && (<img className='bg_img' src={bgAttachment} alt='' width='100%' height='100%'></img>)} */}
           <div className='bg_box_edit'>
             <form action='/' method='post' onSubmit={onBgSubmit}>
               <label>  
                 <input type='file' onChange={onBgchange} style={{display:'none'}} />
-                <span><FaPlus /></span>
+                <span>
+                  <FaPlus />
+                </span>
               </label> 
               <input type='submit' value='Update' />
-            </form>
-            <button className='canBtn' onClick={toggleBgEditing}>Cancel</button>
+            </form>            
+            <button className='canBtn' onClick={toggleBgEditing}>Cancel</button>            
           </div>
-          {/* <img src={bgAttachment} alt='' width='100' height='100' /> */}
+          {/* {bgAttachment && (<img className='bgAttach_img' src={bgAttachment} alt='' width='100' height='100' />)} */}
+          
+          
+         
         </>
         ) : (
         
         <>
-          <img src={newBgUrl} alt='' width='100%' height='100%'></img>
+          <img src={bgUrl} alt='' width='100%' height='100%'></img>
           <span onClick={toggleBgEditing} className='mypro_icon bg_img'>
             <FaCamera/>
           </span>          
@@ -318,13 +324,12 @@ const onBgSubmit = async (e) => {
             <form onSubmit={onFileSubmit} className='mypro_img_form'>
               <label for='proimg'>
                 <input type='file' accept='image/*' id='proimg' onChange={onFilechange} style={{display: 'none'}}/>
-                <span><FaPlus /></span>
+                <span className='mypro_icon add'><FaPlus /></span>
               </label>
               <input type='submit' value='Update'/>
-              <div className='mypro canBtn' onClick={toggleProEditing} >Cancel</div>
+              <button className='mypro canBtn' onClick={toggleProEditing} >Cancel</button>
+              
             </form>
-            
-
           </div>
            ) : (  
             <>
@@ -339,10 +344,10 @@ const onBgSubmit = async (e) => {
 
           <div className='profile_cont'>
          {editing ? ( 
-                <div className='mypro__pro'>
+                <div className='mypro_pro'>
                   <form className='pro_form' action='/' method='post' onSubmit={onSubmit}>
                     <label htmlfor='profile_name' className='blind'>프로필 이름 변경 입력</label>
-                    <input type='text' id='profile_name' className='name_field' value={newDisplayName} onChange={onChange} />
+                    <input type='text' id='profile_name' className='name_field' placeholder={userObj.displayName} value={newDisplayName} onChange={onChange} />
                     <input  type='submit' value='Update'   />              
                   </form>
                   <button onClick={toggleEditing} className='mypro_canBtn'>Cancel</button>
@@ -351,7 +356,7 @@ const onBgSubmit = async (e) => {
             <>
             <div>
               <span className='profile_name'>{userObj.displayName}</span>
-              <span onClick={toggleEditing} className='mypro_icon'>
+              <span onClick={toggleEditing} className='mypro_icon pro_name'>
                 <FaPen/>
               </span>
             </div>

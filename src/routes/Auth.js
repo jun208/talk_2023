@@ -73,7 +73,7 @@ function Auth() {
         {newAccount ? "Sign In" : "Create Account"}
       </span>
       <div className='socialLog'>
-        <button name='google' onClick={onSocialClick}><FaGoogle /> Continue with Google</button>
+        <button name='google' onClick={onSocialClick}><FaGoogle /> Continue with Google </button>
         <button name='github' onClick={onSocialClick}><FaGithub /> Continue with Github</button>
       </div>
     </div>

@@ -13,15 +13,14 @@
 
   main.profile{
     height: calc(100% - 10px);
-    border: 1px solid green;
+    // border: 1px solid green;
     padding: 0;
     
     
     .background{
-      border: 1px solid red;
       height: 65%; 
       background: url(../images/bg_default.png) no-repeat 0 0;
-      border: 1px solid red;
+      // border: 1px solid red;
       
     }
     .profile{
@@ -46,10 +45,14 @@
           font-size: 16px;
         }
         input{
-          width: 148px; 
+          width: 148px;           
           height: 24px; 
           margin: 15px 0 20px; 
           padding: 0 5px;
+          border: none;
+           &::placeholder{
+            text-align: center;
+           }
         }
         .profile_menu{
           display: flex;

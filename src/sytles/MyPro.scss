@@ -13,19 +13,18 @@
 
   main.profile{
     height: calc(100% - 10px);
-    border: 1px solid green;
+    // border: 1px solid green;
     padding: 0;
     
     
     .background{
-      border: 1px solid red;
+      // border: 1px solid red;
       height: 65%; 
-      background: url(../images/bg_default.png) no-repeat 0 0;
-      border: 1px solid red;
+      background: url(../images/bg_default.png) no-repeat 0 0;     
 
       .mypro_icon.bg_img{
         position: absolute;
-        color: #eeeeee;
+        color: #f2f2f2;
         top: 60%;
         left: 16px;
         width: 24px;
@@ -35,12 +34,15 @@
         font-size: 12px;
         text-align: center;
         line-height: 24px;
+        // color: #f2f2f2;
         // box-shadow: 1px 1px 10px #eee;
         // background-color: #eeeeee;
         // opacity: 100%;
-        svg{
-          
-          color: #eee;
+        // svg{ 
+        //   color: #eee;
+        // }
+        &:hover{
+          color: red;
         }
      
 
@@ -53,7 +55,10 @@
         position: absolute;
         left: 16px;
         top: 60%;
+
         form{
+        
+
           input:last-of-type{
             color: green;
             border: none;
@@ -67,6 +72,14 @@
           background: none;
         }
 
+      }
+      img.bgAttach_img{
+        position: absolute;
+        top: 53%;
+        left: 16px;
+
+        // border-radius: 50%;
+        
       }
 
 
@@ -91,17 +104,29 @@
         
         .mypro_img_form{
         position: absolute;
-        right: 30%;
-        top: 20px;
+        left: 58%;
+        
+        // transform: translateX(-50%);
+
+        .mypro_icon.add{
+          
+          margin-right: 8px;
+          cursor: pointer;
+          &:hover{
+            color: red;
+          }
+        }
+        
+        
           
           input:last-of-type{
             border: none;
-            color: green;
+            color:  rgb(0, 196, 0);
             background: none;
-          span{
-
-          }
-            
+            cursor: pointer;
+            // &:hover{
+            //   color:  rgb(0, 196, 0);
+            // }
           }
   
         }
@@ -112,17 +137,24 @@
           cursor: pointer;
           height: 16px;
           background: none;
-          margin-top: 16px;
-          margin-left: 20px;
+          // margin-top: 16px;
+          // margin-left: 20px;
+          // &:hover{
+          //   color: red;
+          // }
+          
         }
 
       }
       .mypro_icon.pro_img{
         position: absolute;
-        top: 0;
-        margin-left: 80px;
-        
-        // color: #f2f2f2;
+        top: -8px;
+        margin-left: 88px;
+        font-size: 16px;
+        color: #f2f2f2;
+        &:hover{
+          color: rgb(255, 41, 41);
+        }
       }
  
         
@@ -143,11 +175,13 @@
           padding-top: 8px;
           display: inline-block;
         }
-        .mypro_icon{
-         
+        .mypro_icon{         
           padding-left: 10px;
+          color: #c7c7c7;
+
+          &:hover{color: red;}
           svg{
-            // color: #666;
+            
           }
         }
         input{
@@ -155,6 +189,7 @@
           height: 24px; 
           margin: 15px 0 20px; 
           padding: 0 5px;
+          
         }
         .profile_menu{
           display: flex;
@@ -180,19 +215,24 @@
           }
         }
 
-        .mypro__pro{
+        .mypro_pro{
           display: flex; flex-direction: column; flex-wrap: wrap;
           .pro_form{
             padding: 0; margin: 0;
             display: flex; flex-direction: column; 
            input:first-of-type{
             // border: none;
-            // border-bottom: 1px solid #555;
+            border: 1px solid #dddddd;
             // width: 100px;
             margin-bottom: 10px;
+            &::placeholder{
+              color: #cccccc;
+              text-align: left;
+            }
            }
             
             input:last-of-type{
+              
               margin: 0;
               margin-bottom: 10px;
               align-self: center ;
@@ -210,6 +250,7 @@
             align-self: center;
             // margin-bottom: 3px;
             // margin-right: 20px;
+            
             padding: 0;
             color: red;
             border: none;

@@ -27,7 +27,7 @@ function Header(props) {
           </div>
           <div className='right_item'>
             <FontAwesomeIcon icon={faMoon} />
-            <FaBluetoothB />     
+            {/* <FaBluetoothB />      */}
             <span><span>100</span>%</span>
             <FontAwesomeIcon icon={faBatteryFull} />        
           </div>

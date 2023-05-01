@@ -62,6 +62,14 @@ main.chatting{
       width: 50px; 
       opacity: 0.5;
     }
+    button{
+      border: none;
+      background: none;
+      cursor: pointer;
+      &:hover{
+        color: red;
+      }
+    }
   }
   .other{
     margin-left: 55px; 
@@ -102,9 +110,6 @@ footer{
   form{
 
     width: 100% ;
-    
-
-    
     // display: flex; 
     // justify-content: flex-end;
 
@@ -130,12 +135,18 @@ footer{
           display: block; 
           width: 34px; 
           height: 37px; 
-          margin-right: 5px; 
+          margin-right:8px; 
           line-height: 37px; 
           text-align: center;
-          background: #ffe73a; 
-          color: #513736; 
+          // background: #ffe73a;
+          background: rgb(255, 11, 11);
+          color:  #fff;
           font-size: 16px;
+          &:hover{
+            background: #fff ;
+            color: rgb(255, 11, 11);
+
+          }
         }
       }
     }
@@ -145,24 +156,23 @@ footer{
       left:0;
       bottom: 3px;
    
-
-      
-      
-
      
-
       .plus_btn{
         display: block;
         position: relative;
         width: 34px;
         height: 37px; 
-        border: 1px solid red;    
+        // border: 1px solid red;    
         svg{   
           position: absolute;
-          left: 5px;
+          left: 12px;
           top: 8px;            
           color: #b3b4b4;            
-          font-size: 16px;}
+          font-size: 16px;
+          &:hover{
+            color: rgb(255, 11, 11);
+          }
+        }
   
       }
       .attach__imageBox{
