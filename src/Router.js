@@ -35,13 +35,11 @@ function AppRouter({isLoggedIn, userObj}) {
                   });
                   setNewBgUrl(newArray[0].bgImgUrl);
                 });
-               
                 
               },[]);
 
   return (
-    <BrowserRouter>
-    
+    <BrowserRouter basename={process.env.PUBLIC_URL}>   
       <Routes>
         {isLoggedIn ? (
           <>
@@ -56,12 +54,7 @@ function AppRouter({isLoggedIn, userObj}) {
           </>
         ) : (
           <Route path='/' element={<Auth />}/>
-
         )}
-         
-
-         
-
       </Routes>
     </BrowserRouter>
   )

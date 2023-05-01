@@ -137,6 +137,7 @@ function Chatting({userObj}) {
           <span className='chat'>And this is an answer</span>
           <span className='chat'>And this is an answer And this is an answer</span>
           <span className='chat'>And this is an answer</span>
+          <span>{process.env.REACT_APP_PROJECT_ID}</span>
           <span className='chat_time'><span>17</span>:<span>33</span></span>
       </div>
       <div className='chat_box my'>

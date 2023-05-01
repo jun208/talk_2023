@@ -3,17 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlane } from "@fortawesome/free-solid-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
-import {FaBluetoothB} from "react-icons/fa";
+// import {FaBluetoothB} from "react-icons/fa";
 import { faBatteryFull } from "@fortawesome/free-solid-svg-icons";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import '../sytles/Header.scss'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import Tabbar from './Tabbar';
 
 function Header(props) {
-
-
-
 
   return (
       <header className={props.className} >

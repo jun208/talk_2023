@@ -278,8 +278,8 @@ const onBgSubmit = async (e) => {
         <section className='background' /*style={{background:`url(${bgimage})`, backgroundSize:'cover'}}*/>
         {bgEditing ? (
         <>
-          <img className='bg_img' src={bgAttachment} alt='' width='100%' height='100%'></img>
-          {/* {bgAttachment && (<img className='bg_img' src={bgAttachment} alt='' width='100%' height='100%'></img>)} */}
+          <img className='bg_img' src={newBgUrl} alt='' width='100%' height='100%'></img>
+           {bgAttachment && (<img className='bg_img' src={bgAttachment} alt='' width='100' height='100'></img>)} 
           <div className='bg_box_edit'>
             <form action='/' method='post' onSubmit={onBgSubmit}>
               <label>  
