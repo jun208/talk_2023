@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/talk_2023/static/css/main.88fa00dd.css",
-    "main.js": "/talk_2023/static/js/main.f9bdf3ae.js",
+    "main.css": "/talk_2023/static/css/main.696e8d88.css",
+    "main.js": "/talk_2023/static/js/main.71a92f98.js",
     "static/js/787.daec8a8a.chunk.js": "/talk_2023/static/js/787.daec8a8a.chunk.js",
     "static/media/kakaofriends.png": "/talk_2023/static/media/kakaofriends.84375bb9f89d79ccd760.png",
     "static/media/path.png": "/talk_2023/static/media/path.7d00edf73f07bdcecc6d.png",
     "static/media/kakaostory.png": "/talk_2023/static/media/kakaostory.572f3ce5bf10fbdaac9d.png",
     "static/media/bg_default.png": "/talk_2023/static/media/bg_default.82687b4e75ad8b89fa96.png",
     "index.html": "/talk_2023/index.html",
-    "main.88fa00dd.css.map": "/talk_2023/static/css/main.88fa00dd.css.map",
-    "main.f9bdf3ae.js.map": "/talk_2023/static/js/main.f9bdf3ae.js.map",
+    "main.696e8d88.css.map": "/talk_2023/static/css/main.696e8d88.css.map",
+    "main.71a92f98.js.map": "/talk_2023/static/js/main.71a92f98.js.map",
     "787.daec8a8a.chunk.js.map": "/talk_2023/static/js/787.daec8a8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88fa00dd.css",
-    "static/js/main.f9bdf3ae.js"
+    "static/css/main.696e8d88.css",
+    "static/js/main.71a92f98.js"
   ]
 }
