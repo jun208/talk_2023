@@ -300,7 +300,7 @@ const onBgSubmit = async (e) => {
         ) : (
         
         <>
-          <img src={bgUrl} alt='' width='100%' height='100%'></img>
+          <img src={newBgUrl} alt='' width='100%' height='100%'></img>
           <span onClick={toggleBgEditing} className='mypro_icon bg_img'>
             <FaCamera/>
           </span>          
